@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+(1..100).each do |index|
+    Todo.create!(
+        title: '部活に行く' + index.to_s,
+        description: '明日も部活' + index.to_s,
+        completed: false
+    )
+end
